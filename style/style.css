@@ -1,0 +1,31 @@
+body,html {
+  background: url(/images/stars.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  background-color: #191a1c;
+}
+
+h1{
+  font-family: 'Amatica SC', cursive;
+  font-weight: bold;
+  color: white;
+  font-size: 300%;
+}
+
+.name{
+  padding-top: 5px;
+  color: #8a8a8a;
+  font-family: 'Amatica SC', cursive;
+  font-size: 80%;
+}
+
+.content{
+ left: 15px;
+ position: absolute;
+ top: 0px;
+}
