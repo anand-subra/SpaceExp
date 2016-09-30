@@ -6,8 +6,8 @@ body,html {
   background-size: cover;
 }
 
-body{
-  background-color: #191a1c;
+body, html{
+  background-color: #060607;
 }
 
 h1{
