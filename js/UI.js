@@ -34,13 +34,23 @@ $(".glyphicon").click(function(){
 
 function getStats(){
   scaleAmountR = parseFloat(Math.round(scaleAmount * 100) / 100).toFixed(2);
+  translateXR = parseFloat(Math.round(translateX * 100) / 100).toFixed(2);
+  translateYR = parseFloat(Math.round(translateY * 100) / 100).toFixed(2);
 $('.zoomFactor').text(scaleAmountR);
-$('.transX').text(translateX);
-$('.transY').text(translateY);
+$('.transX').text(translateXR);
+$('.transY').text(translateYR);
 }
 
 function resetAll(){
-  scaleAmount = 1.0;
+  scaleAmount = 0.3;
   translateX = 0;
   translateY = 0;
+}
+
+function zoom(){
+
+  translate(+width/2+(translateX*scaleAmount), +height/2+(translateY*scaleAmount));
+    translate(translateX, translateY);
+    scale(scaleAmount, scaleAmount);
+  translate(-width/2+(translateX*scaleAmount), -height/2+(translateY*scaleAmount));
 }

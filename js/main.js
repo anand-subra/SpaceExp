@@ -1,3 +1,4 @@
+
 var speedScale =0.1;
 
 var windowHeight = $(window).height(),
@@ -29,7 +30,7 @@ speedSa=0.002*speedScale,
 speedUr=0.001*speedScale,
 speedNe=0.0008*speedScale,
 x, y,
-scaleAmount = 1.0, translateX=0, translateY=0, scaleAmountR;
+scaleAmount = 0.5, translateX=0, translateY=0, scaleAmountR, translateXR,translateYR;
 
 
 
@@ -48,12 +49,14 @@ function draw() {
   // Add semi-transparent rectangle on every run of draw, creates fading visuals effect
   noStroke();
 
+
   fill(220, 30, 11, 50);
   clear();
   rect(0, 0, windowWidth, windowHeight);
 
-  translate(translateX, translateY);
-  scale(scaleAmount, scaleAmount);
+
+  zoom();
+
 
   drawSun();
   drawMercury();
