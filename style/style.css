@@ -8,6 +8,11 @@ body,html {
 
 body, html{
   background-color: #060607;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-user-select: none; /* Chrome/Safari */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
 }
 
 h1{
@@ -25,7 +30,20 @@ h1{
 }
 
 .content{
- left: 15px;
- position: absolute;
- top: 0px;
+  left: 15px;
+  position: absolute;
+  top: 0px;
+}
+
+.glyphicon{
+  color: grey;
+  font-size: 180%;
+}
+
+.glyphicon:hover{
+  color: white;
+}
+
+p{
+  color: grey;
 }

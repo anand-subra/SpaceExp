@@ -28,7 +28,8 @@ speedJu=0.004*speedScale,
 speedSa=0.002*speedScale,
 speedUr=0.001*speedScale,
 speedNe=0.0008*speedScale,
-x, y;
+x, y,
+scaleAmount = 1.0, translateX=0, translateY=0, scaleAmountR;
 
 
 
@@ -36,16 +37,14 @@ x, y;
 function setup() {
   bg = loadImage("images/stars.png");
   createCanvas(windowWidth, windowHeight);
-  createCanvas(windowWidth, windowHeight);
   colorMode(HSB, 360, 100, 100, 100); // Set colour mode to hue-saturation-brightness-(alpha) and value upperbounds
+
 }
 
 
 
 function draw() {
-
   background(bg);
-
   // Add semi-transparent rectangle on every run of draw, creates fading visuals effect
   noStroke();
 
@@ -53,7 +52,8 @@ function draw() {
   clear();
   rect(0, 0, windowWidth, windowHeight);
 
-
+  translate(translateX, translateY);
+  scale(scaleAmount, scaleAmount);
 
   drawSun();
   drawMercury();
