@@ -16,17 +16,21 @@ body, html{
 }
 
 h1{
-  font-family: 'Amatica SC', cursive;
-  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   color: white;
-  font-size: 300%;
+font-size: 40px;
+  letter-spacing: 1px;
+line-height: 40px;
 }
 
 .name{
   padding-top: 5px;
-  color: #8a8a8a;
-  font-family: 'Amatica SC', cursive;
-  font-size: 80%;
+  color: rgb(206, 206, 206);
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  line-height: 15px;
+letter-spacing: 0.5px;
 }
 
 .content{
@@ -45,5 +49,10 @@ h1{
 }
 
 p{
+  font-family: 'Source Code Pro', monospace;
   color: grey;
+}
+
+.controls{
+  text-transform: uppercase;
 }

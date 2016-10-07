@@ -67,6 +67,8 @@ function draw() {
   drawSaturn();
   drawUranus();
   drawNeptune();
+
+  arrowControls();
 }//end of draw
 
 
@@ -84,7 +86,7 @@ function drawSun(){
 
 function drawMercury(){
   noFill();
-  stroke(255, 50);
+  stroke(100, 30);
   ellipse(windowWidth/2, windowHeight/2, sunRadius*1.6, sunRadius*1.6);
 
   fill(230, 29, 67, 100);
@@ -93,14 +95,14 @@ function drawMercury(){
   noStroke();
   ellipse(x, y, 4.879, 4.879); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
   textSize(100*scaleAmount);
-  text("Mercury", x+25, y+25);
+  text("Mercury", x+7, y+7);
   angleMer += speedMer;
 }
 
 
 function drawVenus(){
   noFill();
-  stroke(255, 50);
+  stroke(100, 30);
   ellipse(windowWidth/2, windowHeight/2, sunRadius*2, sunRadius*2);
 
   fill(32, 86, 67, 100);
@@ -109,13 +111,13 @@ function drawVenus(){
   noStroke();
   ellipse(x, y, 12.104, 12.104); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
   textSize(100*scaleAmount);
-  text("Venus", x+25, y+25);
+  text("Venus", x+9, y+9);
   angleVe += speedVe;
 }
 
 function drawEarth(){
   noFill();
-  stroke(255, 50);
+  stroke(100, 30);
   ellipse(windowWidth/2, windowHeight/2, sunRadius*2.4, sunRadius*2.4);
 
   fill(185, 36, 73, 100);
@@ -124,13 +126,13 @@ function drawEarth(){
   noStroke();
   ellipse(x, y, 12.752, 12.752); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
   textSize(100*scaleAmount);
-  text("Earth", x+25, y+25);
+  text("Earth", x+24, y+24);
   angleEa += speedEa;
 }
 
 function drawMars(){
   noFill();
-  stroke(255, 50);
+  stroke(100, 30);
   ellipse(windowWidth/2, windowHeight/2, sunRadius*2.8, sunRadius*2.8);
 
   fill(31, 44, 71, 100);
@@ -139,13 +141,13 @@ function drawMars(){
   noStroke();
   ellipse(x, y, 6.779, 6.779); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
   textSize(100*scaleAmount);
-  text("Mars", x+25, y+25);
+  text("Mars", x+13, y+13);
   angleMa += speedMa;
 }
 
 function drawJupiter(){
   noFill();
-  stroke(255, 50);
+  stroke(100, 30);
   ellipse(windowWidth/2, windowHeight/2, sunRadius*3.2, sunRadius*3.2);
 
   fill(20, 71, 95, 100);
@@ -154,13 +156,13 @@ function drawJupiter(){
   noStroke();
   ellipse(x, y, 139.822, 139.822); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
   textSize(100*scaleAmount);
-  text("Jupiter", x+25, y+25);
+  text("Jupiter", x+70, y+70);
   angleJu += speedJu;
 }
 
 function drawSaturn(){
   noFill();
-  stroke(255, 50);
+  stroke(100, 30);
   ellipse(windowWidth/2, windowHeight/2, sunRadius*3.6, sunRadius*3.6);
 
   fill(39, 65, 93, 100);
@@ -169,28 +171,28 @@ function drawSaturn(){
   noStroke();
   ellipse(x, y, 116.464, 116.464); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
   textSize(100*scaleAmount);
-  text("Saturn", x+25, y+25);
+  text("Saturn", x+59, y+59);
   angleSa += speedSa;
 }
 
 function drawUranus(){
   noFill();
-  stroke(255, 50);
+  stroke(100, 30);
   ellipse(windowWidth/2, windowHeight/2, sunRadius*4, sunRadius*4);
 
   fill(181, 22, 75, 100);
   x = windowWidth/2 + cos(angleUr)*sunRadius*2; // Set frequency on x-axis
   y = windowHeight/2 + sin(angleUr)*sunRadius*2; // Set frequency on y-axis
   noStroke();
-  ellipse(x, y, 50.724, 50.724); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
+  var uranus = ellipse(x, y, 50.724, 50.724); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
   textSize(100*scaleAmount);
-  text("Uranus", x+25, y+25);
+  text("Uranus", x+27, y+27);
   angleUr += speedUr;
 }
 
 function drawNeptune(){
   noFill();
-  stroke(255, 50);
+  stroke(100, 30);
   ellipse(windowWidth/2, windowHeight/2, sunRadius*4.4, sunRadius*4.4);
 
   fill(215, 38, 80, 100);
@@ -199,6 +201,6 @@ function drawNeptune(){
   noStroke();
   ellipse(x, y, 49.244, 49.244); // Larger circles with higher amplitude - (high amplitude = large circles + wider spread of circles)
   textSize(100*scaleAmount);
-  text("Neptune", x+25, y+25);
+  text("Neptune", x+27, y+27);
   angleNe += speedNe;
 }
