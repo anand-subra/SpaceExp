@@ -1,7 +1,7 @@
 # SpaceExp
-A JS based visualisation of our solar system. Looking to move this to the VR space eventually.
+A JS based visualisation of our solar system. It's still a work-in-progress.
 
-Live at http://asubramaniam.com/SpaceExp
+Live at https://thatanand.github.io/demo/space-exp/
 
 Feature checklist
 -----------------
